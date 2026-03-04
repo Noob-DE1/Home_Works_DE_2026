@@ -18,9 +18,12 @@ the README file of your repository.
 
 Run docker with the `python:3.13` image. Use an entrypoint `bash` to interact with the container.
 
+![alt text](images/image.png)
+
+
 What's the version of `pip` in the image?
 
-- 25.3
+- 25.3 <-Correct->
 - 24.3.1
 - 24.2.1
 - 23.3.1
@@ -66,7 +69,7 @@ volumes:
 - localhost:5432
 - db:5433
 - postgres:5432
-- db:5432
+- db:5432 <-Correct->
 
 If multiple answers are correct, select any 
 
@@ -87,21 +90,25 @@ wget https://github.com/DataTalksClub/nyc-tlc-data/releases/download/misc/taxi_z
 
 ## Question 3. Counting short trips
 
+![alt text](images/image-1.png)
+
 For the trips in November 2025 (lpep_pickup_datetime between '2025-11-01' and '2025-12-01', exclusive of the upper bound), how many trips had a `trip_distance` of less than or equal to 1 mile?
 
 - 7,853
-- 8,007
+- 8,007 <-Correct->
 - 8,254
 - 8,421
 
 
 ## Question 4. Longest trip for each day
 
+![alt text](images/image-2.png)
+
 Which was the pick up day with the longest trip distance? Only consider trips with `trip_distance` less than 100 miles (to exclude data errors).
 
 Use the pick up time for your calculations.
 
-- 2025-11-14
+- 2025-11-14 <-correct->
 - 2025-11-20
 - 2025-11-23
 - 2025-11-25
@@ -109,9 +116,11 @@ Use the pick up time for your calculations.
 
 ## Question 5. Biggest pickup zone
 
+![alt text](images/image-3.png)
+
 Which was the pickup zone with the largest `total_amount` (sum of all trips) on November 18th, 2025?
 
-- East Harlem North
+- East Harlem North <-correct->
 - East Harlem South
 - Morningside Heights
 - Forest Hills
@@ -119,12 +128,15 @@ Which was the pickup zone with the largest `total_amount` (sum of all trips) on 
 
 ## Question 6. Largest tip
 
+![alt text](images/image-4.png)
+
 For the passengers picked up in the zone named "East Harlem North" in November 2025, which was the drop off zone that had the largest tip?
+
 
 Note: it's `tip` , not `trip`. We need the name of the zone, not the ID.
 
 - JFK Airport
-- Yorkville West
+- Yorkville West <-correct->
 - East Harlem North
 - LaGuardia Airport
 
@@ -151,7 +163,7 @@ Answers:
 - terraform import, terraform apply -y, terraform destroy
 - teraform init, terraform plan -auto-apply, terraform rm
 - terraform init, terraform run -auto-approve, terraform destroy
-- terraform init, terraform apply -auto-approve, terraform destroy
+- terraform init, terraform apply -auto-approve, terraform destroy <-correct->
 - terraform import, terraform apply -y, terraform rm
 
 
